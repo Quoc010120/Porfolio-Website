@@ -1,0 +1,160 @@
+/*
+Theme Name: porfolio
+Theme URI: http://example.com/
+Author: Trung Quoc
+Author URI: http://example.com/
+Description: my porfolio website
+Version: 1.0
+License: GNU General Public License v2 or later
+*/
+/* Basic resets and global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px; 
+}
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+h2 {
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.skill-list {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.skill-list ul {
+    list-style: none;
+    margin-left: 40px;
+}
+.skill-list li {
+    list-style-image: url('../img/paw.png');
+
+}
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
+.padding-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.green-background {
+    background-color: green;
+}
+.purple-background {
+    background-color: plum;
+}
+.orange-background {
+    background-color: rgb(197, 139, 30);
+}
+.intext-link {
+    text-decoration: none;
+    color: lightblue;
+}
+img {
+    max-width: 100%;
+}
+.primary-button {
+    border-radius: 20px;
+    display: inline-block;
+    border: 2px solid #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: black;
+}
+.white-background p {
+    text-align: center;
+}
+
+/* ////////////tablet///////////////// */
+@media only screen and (min-width:768px) {
+    .text-box-in-container {
+        max-width: 324px;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+    .padding-left-80 {
+        padding-left: 80px;
+    }
+    .padding-right-80 {
+        padding-right: 80px;
+    }
+    .white-background .container {
+        max-width: 380px;
+    }
+    .skill-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .orange-background .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .green-background .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .purple-background .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+/* ////////////desktop///////////////// */
+@media only screen and (min-width:1280px) {
+    .text-box-in-container {
+        max-width: 580px;
+    }
+    .white-background .container {
+        max-width: 500px;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+    .padding-bottom-40 {
+        padding-bottom: 0px;
+    }
+}
