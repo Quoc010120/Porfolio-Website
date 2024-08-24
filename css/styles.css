@@ -15,14 +15,13 @@ License: GNU General Public License v2 or later
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px; 
 }
 p {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     color: black;
     margin-top: 20px;
@@ -30,14 +29,14 @@ p {
 }
 h1 {
     font-size: 32px;
-    font-family: Arial, sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: bold;
-    color: orange;
+    color: #faaf5e;
     text-align: center;
 }
 h2 {
     font-size: 28px;
-    font-family: Arial, sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: bold;
     color: black;
 }
@@ -54,6 +53,10 @@ h2 {
     list-style-image: url('../img/paw.png');
 
 }
+.padding-top-bottom-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 .padding-bottom-40 {
     padding-bottom: 40px;
 }
@@ -69,17 +72,17 @@ h2 {
 }
 
 .green-background {
-    background-color: green;
+    background-color: #1eb88a;
 }
 .purple-background {
-    background-color: plum;
+    background-color: #eeccdb;
 }
 .orange-background {
-    background-color: rgb(197, 139, 30);
+    background-color: #faaf5e;
 }
 .intext-link {
     text-decoration: none;
-    color: lightblue;
+    color: rgb(26, 26, 191);
 }
 img {
     max-width: 100%;
@@ -93,12 +96,11 @@ img {
     font-family: Arial, sans-serif;
     font-weight: bold;
     color: white;
-    background-color: orange;
+    background-color: #faaf5e;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: black;
 }
 .white-background p {
     text-align: center;
@@ -106,12 +108,14 @@ img {
 
 /* ////////////tablet///////////////// */
 @media only screen and (min-width:768px) {
+    .image-container {
+        max-width: 50%;
+    }
     .text-box-in-container {
-        max-width: 324px;
+        max-width: 50%;
     }
     .container {
         margin: 0 auto;
-        max-width: 768px;
     }
     .padding-left-80 {
         padding-left: 80px;
@@ -120,7 +124,7 @@ img {
         padding-right: 80px;
     }
     .white-background .container {
-        max-width: 380px;
+        max-width: 70%;
     }
     .skill-list {
         flex-direction: row;
@@ -144,15 +148,8 @@ img {
 }
 /* ////////////desktop///////////////// */
 @media only screen and (min-width:1280px) {
-    .text-box-in-container {
-        max-width: 580px;
-    }
     .white-background .container {
         max-width: 500px;
-    }
-    .container {
-        margin: 0 auto;
-        max-width: 1280px;
     }
     .padding-bottom-40 {
         padding-bottom: 0px;
