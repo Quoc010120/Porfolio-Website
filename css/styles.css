@@ -66,6 +66,18 @@ h2 {
     padding-bottom: 20px;
     padding-top: 30px;
 }
+.header-container ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+.header-container ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .container {
     margin: 0 auto;
     max-width: 1280px;
