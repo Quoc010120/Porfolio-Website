@@ -42,6 +42,13 @@ h2 {
     font-weight: bold;
     color: black;
 }
+
+h3 {
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    color: black;
+}
 .white-link{
     color:white;
 }
@@ -139,9 +146,7 @@ img {
     font-weight: bold;
     font-size: 28px;
 }
-.bl-color-a{
-    color:#000;
-}
+
 .form-container {
     position: relative;
     background-color: #fff;
